@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+<div class="main">
+    <h2>History of Northwood</h2>
+    <h5>Northwood, The 1930's</h5>
+    <div class><img src ="https://user-images.githubusercontent.com/43457316/68999559-c9f76280-088f-11ea-9b2f-4d34389cdd57.jpg" style="height:200px;">Image</div>
+    <p>Past</p>
+    <p>Northwood Plaza was completed in the late 1930s by the Roland Park Company, the Builder responsible for what is now known as Original Northwood. Obviously Roland Park was built by its namesake Company along with its neighbors to the West of Greenmont Avenue/York Road. Northwood Plaza represented, at least in Retail Trends a move towards suburbanization. A Hechts branch opened there along with two Grocery Stores and the Northwood Movie House. Opening a Department Store in what was thought of Suburbia was a radical move back then. Not surprisingly, the Shopping Center was segregated despite having the City's first Black Suburb; Morgan Park located nearby to the east. Northwood Plaza's popularity continued to grow as Northern and Northeast Baltimore became built out. It is unclear when the New Haven Jazz Club Opened but it has been there for several decades.</p>
+    <br>
+    <h5>Northwood, 2019</h5>
+    <div class> <img src ="https://user-images.githubusercontent.com/43457316/68999565-ea272180-088f-11ea-9d20-1412bc0053e1.jpg" style="height:200px;">Image</div>
+    <p>Present</p>
+    <p>Baltimore City has been experiencing high levels of violent crime for several years. In 2014, when violent crime was at its lowest level in the past five years, the city still had the sixth highest violent crime rate among U.S. cities with over 250,000 people. A Baltimore Sun analysis shows that the city experienced nearly 34% more violent crime in 2017 than in 2014, and although violent crime in 2018 has decreased 9% compared to 2017, it still has seen a significant increase, as much as 22%, compared to prior years. The city recorded 309 murders in 2018, down from 342 in 2017, however its murder rate by population continues to be the highest among the country’s 30 largest cities, with more than 50 murders per 100,000 people</p>
+    <h5>Northwood, 2021</h5>
+    <div class> <img src="https://user-images.githubusercontent.com/43457316/68999637-2444f300-0891-11ea-82e9-fdab2ab4194b.jpg" style="height:200px;">Image</div>
+    <p>Future</p>
+    <p>Morgan State University (MSU) President David Wilson announced today that the Maryland Board of Public Works (BPW) recently approved leases related to the relocation of the university’s Barnes and Noble-operated bookstore and the construction of an MSU public safety facility at the site of the Northwood Plaza Shopping Center. Coinciding with years of planning and discussion with stakeholder groups, the BPW approvals clear the path to begin the construction of Northwood Commons, a $50-million redevelopment project located adjacent to Morgan’s West Campus.</p>
+</div>
+ 
+
+</body>
+</html>
